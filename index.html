@@ -65,7 +65,7 @@
     }
 
     /* تأثير الظهور عند التمرير */
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.9s ease-out; }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
     .container { width: 90%; max-width: 1200px; margin: 0 auto; }
@@ -137,7 +137,7 @@
       width: 100%; max-width: 400px; height: auto; z-index: 2; 
       filter: drop-shadow(0 10px 30px rgba(0,0,0,0.5)); 
       -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%); 
-      animation: floatImage 5s ease-in-out infinite;
+      animation: floatImage 4s ease-in-out infinite;
     }
     @keyframes floatImage { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
 
@@ -391,7 +391,7 @@
 
   <footer>
     <div class="container footer-content">
-       <div style="font-weight:bold;">© 2026 Saher Ehab Marzouk - <span data-i18n="rights">All Rights Reserved</span></div>
+       <div style="font-weight:bold;">© 2026 Saher Marzouk - <span data-i18n="rights">All Rights Reserved</span></div>
        
        <div class="social-group" style="display:flex; gap:15px;">
           <a href="https://www.linkedin.com/in/saherehab/" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -441,7 +441,7 @@
         { title: "E-Commerce", desc: "Online store UI.", tags: ["React"], link: "#" }
       ],
       certs: [
-        { name: "CCNA and AI Enterprise", org: "Cisco", date: "2024", link: "https://drive.google.com/drive/folders/12emPtzjHLj2uGypKSF-hb5oZ-FWRh6f4?usp=sharing" }
+        { name: "CCNA and AI Enterprise", org: "Cisco", date: "2026", link: "https://drive.google.com/drive/folders/12emPtzjHLj2uGypKSF-hb5oZ-FWRh6f4?usp=sharing" }
       ],
       lang: {
         en: { 
@@ -471,11 +471,11 @@
         
         emailjs.sendForm('service_1qx75yh', 'template_hiwvkgg', this)
             .then(function() {
-                alert(currentLang === 'en' ? 'Message Sent! ✅' : 'تم الإرسال بنجاح! ✅');
+                alert(currentLang === 'en' ? 'Message Sent! 😀' : 'تم الإرسال بنجاح! 😀');
                 btn.textContent = originalText;
                 document.getElementById('contact-form').reset();
             }, function(error) {
-                alert(currentLang === 'en' ? 'Failed to send ❌' : 'فشل الإرسال ❌');
+                alert(currentLang === 'en' ? 'Failed to send ☹️' : 'فشل الإرسال ☹️');
                 btn.textContent = originalText;
             });
     });
